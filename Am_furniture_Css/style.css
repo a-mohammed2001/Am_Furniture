@@ -35,17 +35,21 @@ header .container input:focus {
   outline: black;
 }
 header .container .login {
-  float: right;
-  margin-top: 3%;
-  margin-right: 2.3%;
   font-size: 20px;
+  position: absolute;
+  transform: translate(945px, -180px);
 }
 header .container .login span:hover {
   color: #49AEB4;
   cursor: pointer;
 }
-
-.list {
+header .container nav input[type=checkbox] {
+  display: none;
+}
+header .container nav label {
+  display: none;
+}
+header .container nav .list {
   z-index: 99999;
   background-color: white;
   margin-top: 20px;
@@ -55,53 +59,28 @@ header .container .login span:hover {
   position: sticky;
   top: 0;
 }
-.list li {
+header .container nav .list li {
   width: calc(100% / 7);
   text-align: center;
   padding: 10px;
 }
-.list li:hover {
+header .container nav .list li:hover {
   color: #49AEB4;
   cursor: pointer;
 }
 
 .collections {
-  margin-bottom: 50px;
-}
-.collections .container {
-  display: flex;
-}
-.collections .container .collection-intro {
-  padding: 150px 50px 50px 0;
-  width: calc(100%/2.5);
-}
-.collections .container .collection-intro h2 {
-  font-size: 50px;
-}
-.collections .container .collection-intro p {
-  width: 370px;
-}
-.collections .container .collection-intro span {
-  font-size: 30px;
-  font-weight: bold;
-}
-.collections .container .collection-intro button {
-  background-color: #49AEB4;
-  color: white;
-  border: none;
-  padding: 16px;
-  width: 70%;
-  display: block;
+  margin-bottom: 100px;
 }
 .collections .container .collection-images {
   overflow: hidden;
   height: 565px;
-  width: 650px;
+  width: 1076px;
 }
 .collections .container .collection-images .control {
   position: absolute;
   display: flex;
-  transform: translate(611px, 65px);
+  transform: translate(1039px, 65px);
   width: 70px;
   height: 35px;
   z-index: 9999;
@@ -123,176 +102,252 @@ header .container .login span:hover {
 .collections .container .collection-images .collections-list {
   position: relative;
   margin: 0;
-  width: 2000px;
+  display: flex;
+  margin-left: -1076px;
 }
 .collections .container .collection-images .collections-list li {
-  position: relative;
-  float: left;
-  height: 565px;
-  width: 650px;
-}
-.collections .container .collection-images .collections-list li img {
-  height: 100%;
-  width: 100%;
-}
-
-.products {
+  width: 1076px;
   display: flex;
-  margin-bottom: 100px;
 }
-.products h2 {
+.collections .container .collection-images .collections-list li .collection-intro {
+  padding: 150px 50px 50px 0;
+  width: 419px;
+  float: left;
+}
+.collections .container .collection-images .collections-list li .collection-intro h2 {
   font-size: 50px;
-  margin-bottom: 20px;
 }
-.products .product-images {
-  padding-top: 45px;
-  position: relative;
-  overflow: hidden;
-  width: 1092px;
-  height: 360px;
+.collections .container .collection-images .collections-list li .collection-intro p {
+  width: 370px;
 }
-.products .product-images .product-control {
-  display: contents;
-}
-.products .product-images .product-control span {
-  background-color: rgba(211, 211, 211, 0.205);
-  position: absolute;
-  display: block;
-  z-index: 999;
-  height: 270px;
-  width: 12px;
-  box-shadow: 0px 0px 5px 0px black;
-}
-.products .product-images .product-control .product-next {
-  transform: translateX(1080px);
-}
-.products .product-images .product-list {
-  position: relative;
-  margin: 0;
-  width: 1837px;
-}
-.products .product-images .product-list li {
-  position: relative;
-  float: left;
-  overflow: hidden;
-  margin: 0 10px 60px;
-  text-align: center;
-  width: 343px;
-  height: 270px;
-  border: 1px solid black;
-  box-shadow: 0px 0px 8px 0px black;
-}
-.products .product-images .product-list li:nth-child(3) {
-  transform: scale(1.2);
-  transition: all .5s ease-in-out;
-  z-index: 99;
-}
-.products .product-images .product-list li img {
-  height: 100%;
-  width: 100%;
-}
-
-.board {
-  display: flex;
-  padding: 0;
-  box-shadow: 0px 0px 25px 0px lightslategrey;
-  margin-bottom: 100px;
-}
-.board .board-img {
-  display: flex;
-  background-color: #49AEB4;
-  padding: 30px;
-  position: relative;
-  border-top-right-radius: 16% 70%;
-  border-bottom-right-radius: 16% 70%;
-}
-.board .board-img .active-img {
-  margin-right: 20px;
-}
-.board .board-img ul {
-  padding-top: 20px;
-}
-.board .board-img ul li {
-  height: 90px;
-  width: 90px;
-  margin: 10px;
-}
-.board .board-img ul li img {
-  height: 100%;
-  width: 100%;
-}
-
-footer .container {
-  border-top: 1px solid black;
-  padding: 30px;
-  font-family: Cursive;
-  display: flex;
-}
-footer .container .landing-end {
-  margin-top: 30px;
-  display: flex;
-}
-footer .container .landing-end .footer-logo {
+.collections .container .collection-images .collections-list li .collection-intro span {
+  font-size: 30px;
   font-weight: bold;
 }
-footer .container .landing-end .footer-logo img {
-  height: 50px;
-  width: 50px;
+.collections .container .collection-images .collections-list li .collection-intro button {
+  background-color: #49AEB4;
+  color: white;
+  border: none;
+  padding: 16px;
+  width: 75%;
+  display: block;
 }
-footer .container .landing-end .footer-logo span {
-  font-size: 30px;
-  position: absolute;
-}
-footer .container .landing-end .footer-logo p {
-  margin-top: 20px;
-  width: 433px;
-}
-footer .container .landing-end ul {
-  margin-left: 35px;
-}
-footer .container .map {
-  background-color: lightgrey;
-  height: 300px;
-  width: 591px;
-  margin-left: 35px;
-  text-align: center;
+.collections .container .collection-images .collections-list li img {
+  float: right;
+  height: 565px;
+  width: 656px;
 }
 
-@media (max-width: 1200px) {
-  .collections .container .collection-intro {
-    padding: 55px 0;
-    width: calc(100%/2.5);
+/*
+.products{
+    display: flex;
+    margin-bottom: 100px;
+    h2{
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+    .product-images{
+        padding-top: 45px;
+        position: relative;
+        overflow: hidden;
+        width: 1092px;
+        height: 360px;
+         .product-control{
+          display: contents;
+            span{
+                background-color: rgba(211, 211, 211, 0.205);
+                position: absolute;
+                display: block;
+                z-index: 999;
+                height: 270px;
+                width: 12px;
+                box-shadow: 0px 0px 5px 0px black;
+            } 
+            .product-next{
+                transform: translateX(1080px);
+            }
+         }
+        .product-list{
+         
+            position: relative;
+            margin: 0;    
+            width: 1837px;  
+        
+           
+             li{            
+                position: relative;
+                float: left;
+                overflow: hidden;
+                margin: 0 10px 60px;
+                text-align: center;
+                width: 343px;
+                height: 270px;
+                border: 1px solid black;
+                box-shadow: 0px 0px 8px 0px black;
+                &:nth-child(3){
+                    transform: scale(1.2);
+                    transition: all .5s ease-in-out;
+                    z-index: 99;
+                }
+               
+                img{
+                   height: 100%;
+                   width: 100%;
+                }
+               }
+              
+           }
+       
+    }
+}
+.board{
+    display: flex;
+    padding: 0;
+    box-shadow: 0px 0px 25px 0px lightslategrey;
+    margin-bottom: 100px;
+    .board-img{
+        display: flex;
+        background-color: $mainColor;
+        padding: 30px;
+        position: relative;
+        
+       
+        border-top-right-radius: 16% 70%;
+        border-bottom-right-radius: 16% 70%;
+       
+
+        .active-img{
+         margin-right: 20px;
+        }
+        ul{
+            padding-top:20px ;
+            li{
+                height:90px;
+                width: 90px;
+                margin: 10px;
+                img{
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+footer {
+    .container{
+        border-top: 1px solid black;
+        padding:30px;
+        font-family:  Cursive;
+        display: flex;
+    .landing-end{
+        margin-top: 30px;
+        display: flex;
+        .footer-logo{
+            
+            font-weight: bold;           
+            img{
+                height:50px;
+                width: 50px;
+            }
+            span{
+                font-size: 30px;
+                position: absolute;
+            }
+            p{
+                margin-top: 20px;
+                width: 433px;
+            }
+        }
+        ul{
+            margin-left: 35px;
+        }
+    }
+    .map{
+        background-color: lightgrey;
+        height: 300px;
+        width: 591px;
+        margin-left: 35px;
+        text-align: center;
+    }
+}
+}*/
+@media (max-width: 1200px) and (min-width: 993px) {
+  header .container {
+    padding-top: 20px;
   }
-  .collections .container .collection-intro h2 {
-    font-size: 40px;
-  }
-  .collections .container .collection-intro p {
-    width: 300px;
-  }
-  .collections .container .collection-intro span {
-    font-size: 30px;
+  header .container .logo {
     font-weight: bold;
+    display: inline;
+    font-family: Cursive;
   }
-  .collections .container .collection-intro button {
-    background-color: #49AEB4;
-    color: white;
-    border: none;
-    padding: 16px;
-    width: 70%;
-    display: block;
+  header .container .logo img {
+    height: 9%;
+    width: 9%;
+  }
+  header .container .logo span {
+    font-size: 30px;
+    margin-top: 1.5%;
+    position: absolute;
+  }
+  header .container input {
+    width: 25%;
+    height: 45px;
+    border-radius: 50px;
+    padding-left: 15px;
+    position: absolute;
+    left: 50%;
+    margin-left: -175px;
+    margin-top: 2%;
+    border: 2.2px solid black;
+  }
+  header .container input:focus {
+    outline: black;
+  }
+  header .container .login {
+    transform: translate(775px, -173px);
+  }
+  header .container .login span:hover {
+    color: #49AEB4;
+    cursor: pointer;
+  }
+  header .container nav input[type=checkbox] {
+    display: none;
+  }
+  header .container nav label {
+    display: none;
+  }
+  header .container nav .list {
+    z-index: 99999;
+    background-color: white;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    display: flex;
+    border-bottom: 1px solid black;
+    position: sticky;
+    top: 0;
+  }
+  header .container nav .list li {
+    width: calc(100% / 7);
+    text-align: center;
+    padding: 10px;
+  }
+  header .container nav .list li:hover {
+    color: #49AEB4;
+    cursor: pointer;
+  }
+
+  .collections {
+    margin-bottom: 100px;
   }
   .collections .container .collection-images {
     overflow: hidden;
     height: 565px;
-    width: 650px;
+    width: 900px;
   }
   .collections .container .collection-images .control {
-    position: absolute;
-    display: flex;
-    transform: translate(546px, 65px);
+    transform: translate(867px, 65px);
     width: 60px;
     height: 30px;
-    z-index: 9999;
   }
   .collections .container .collection-images .control button {
     background-color: #49AEB4;
@@ -311,73 +366,369 @@ footer .container .map {
   .collections .container .collection-images .collections-list {
     position: relative;
     margin: 0;
-    width: 2000px;
+    display: flex;
+    margin-left: -900px;
+  }
+  .collections .container .collection-images .collections-list li {
+    display: flex;
+    width: 900px;
+  }
+  .collections .container .collection-images .collections-list li .collection-intro {
+    width: 320px;
+  }
+  .collections .container .collection-images .collections-list li .collection-intro h2 {
+    font-size: 40px;
+  }
+  .collections .container .collection-images .collections-list li .collection-intro p {
+    width: 300px;
+  }
+  .collections .container .collection-images .collections-list li .collection-intro span {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .collections .container .collection-images .collections-list li .collection-intro button {
+    background-color: #49AEB4;
+    color: white;
+    border: none;
+    padding: 16px;
+    width: 75%;
+    display: block;
+  }
+  .collections .container .collection-images .collections-list li img {
+    float: right;
+    height: 536px;
+    width: 580px;
+  }
+
+  /* .products{
+       display: flex;
+       margin-bottom: 100px;
+       h2{
+           font-size: 35px;
+           margin-bottom: 20px;
+       }
+       .product-images{
+           padding-top: 45px;
+           position: relative;
+           overflow: hidden;
+           width: 930px;
+           height: 360px;
+           .product-control{
+               display: contents;
+                 span{
+                     background-color: rgba(211, 211, 211, 0.205);
+                     position: absolute;
+                     display: block;
+                     z-index: 999;
+                     height: 240px;
+                     width: 12px;
+                     box-shadow: 0px 0px 5px 0px black;
+                 } 
+                 .product-next{
+                     transform: translateX(919px);
+                 }
+              }
+           .product-list{
+            
+               position: relative;
+               margin: 0;    
+               width: 1837px;  
+           
+              
+                li{            
+                   position: relative;
+                   float: left;
+                   overflow: hidden;
+                   margin: 0 10px 60px;
+                   text-align: center;
+                   width: 306px;
+                   height: 240px;
+                   border: 1px solid black;
+                   box-shadow: 0px 0px 8px 0px black;
+                   &:nth-child(3){
+                       transform: scale(1.2);
+                       transition: all .5s ease-in-out;
+                       z-index: 99;
+                   }
+                  
+                   img{
+                      height: 100%;
+                      width: 100%;
+                   }
+                  }
+                 
+              }
+          
+       }
+   }*/
+}
+@media (max-width: 992px) and (min-width: 769px) {
+  header .container {
+    margin-bottom: 40px;
+  }
+  header .container .logo {
+    font-weight: bold;
+    display: inline;
+    font-family: Cursive;
+  }
+  header .container .logo span {
+    margin-top: 0.5%;
+  }
+  header .container input {
+    height: 40px;
+    left: 55%;
+    margin-left: -120px;
+    margin-top: 1%;
+  }
+  header .container input:focus {
+    outline: black;
+  }
+  header .container nav .login {
+    transform: translate(10px, -100px);
+    z-index: 2;
+  }
+  header .container nav .login span:hover {
+    color: #49AEB4;
+    cursor: pointer;
+  }
+  header .container nav input[type=checkbox] {
+    position: absolute;
+    display: inline;
+    transform: translate(392px, -72px);
+    z-index: 2;
+    opacity: 0;
+    width: 40px;
+    height: 36px;
+  }
+  header .container nav input[type=checkbox]:checked {
+    transform: translate(392px, -71px);
+  }
+  header .container nav input[type=checkbox]:checked ~ label {
+    transform: translate(656px, -65px);
+  }
+  header .container nav input[type=checkbox]:checked ~ ul, header .container nav input[type=checkbox]:checked ~ .login {
+    height: 0px;
+    overflow: hidden;
+  }
+  header .container nav label {
+    display: inline;
+    position: absolute;
+    transform: translate(656px, -65px);
+  }
+  header .container nav .list {
+    z-index: 1;
+    margin-bottom: 60px;
+    display: block;
+  }
+  header .container nav .list li {
+    text-align: start;
+    padding: 10px;
+  }
+  header .container nav .list li:hover {
+    color: #49AEB4;
+    cursor: pointer;
+  }
+  header .container nav .list li:last-child {
+    padding-bottom: 50px;
+  }
+
+  .collections {
+    margin-bottom: 50px;
+  }
+  .collections .container {
+    display: flex;
+  }
+  .collections .container .collection-images .control {
+    position: absolute;
+    display: flex;
+    transform: translate(611px, 65px);
+    width: 70px;
+    height: 35px;
+    z-index: 9999;
+  }
+  .collections .container .collection-images .control button {
+    background-color: #49AEB4;
+    color: white;
+    width: 50%;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+  }
+  .collections .container .collection-images .control button:hover {
+    opacity: 0.9;
+  }
+  .collections .container .collection-images .control button:focus {
+    outline: none;
+  }
+  .collections .container .collection-images .collections-list {
+    position: relative;
   }
   .collections .container .collection-images .collections-list li {
     position: relative;
-    float: left;
-    height: 460px;
-    width: 621px;
+  }
+  .collections .container .collection-images .collections-list li .collection-intro h2 {
+    font-size: 50px;
+  }
+  .collections .container .collection-images .collections-list li .collection-intro p {
+    width: 370px;
+  }
+  .collections .container .collection-images .collections-list li .collection-intro span {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .collections .container .collection-images .collections-list li .collection-intro button {
+    background-color: #49AEB4;
+    color: white;
+    border: none;
+    padding: 16px;
+    width: 70%;
+    display: block;
   }
   .collections .container .collection-images .collections-list li img {
     height: 100%;
     width: 100%;
   }
-
-  .products {
-    display: flex;
-    margin-bottom: 100px;
+}
+@media (max-width: 768px) and (min-width: 601px) {
+  header .container {
+    margin-bottom: 40px;
   }
-  .products h2 {
-    font-size: 35px;
-    margin-bottom: 20px;
+  header .container .logo {
+    font-weight: bold;
+    display: inline;
+    font-family: Cursive;
   }
-  .products .product-images {
-    padding-top: 45px;
-    position: relative;
-    overflow: hidden;
-    width: 930px;
-    height: 360px;
+  header .container .logo span {
+    margin-top: 0;
+    font-size: 25px;
   }
-  .products .product-images .product-control {
-    display: contents;
+  header .container input {
+    height: 35px;
+    left: 65%;
+    margin-left: -120px;
+    margin-top: 0.5%;
   }
-  .products .product-images .product-control span {
-    background-color: rgba(211, 211, 211, 0.205);
+  header .container input:focus {
+    outline: black;
+  }
+  header .container nav .login {
+    transform: translate(10px, -100px);
+    z-index: 2;
+  }
+  header .container nav .login span:hover {
+    color: #49AEB4;
+    cursor: pointer;
+  }
+  header .container nav input[type=checkbox] {
     position: absolute;
-    display: block;
-    z-index: 999;
-    height: 240px;
-    width: 12px;
-    box-shadow: 0px 0px 5px 0px black;
+    display: inline;
+    transform: translate(242px, -62px);
+    z-index: 2;
+    opacity: 0;
+    width: 40px;
+    height: 36px;
   }
-  .products .product-images .product-control .product-next {
-    transform: translateX(911px);
+  header .container nav input[type=checkbox]:checked {
+    transform: translate(242px, -62px);
   }
-  .products .product-images .product-list {
-    position: relative;
-    margin: 0;
-    width: 1837px;
+  header .container nav input[type=checkbox]:checked ~ label {
+    transform: translate(474px, -60px);
   }
-  .products .product-images .product-list li {
-    position: relative;
-    float: left;
+  header .container nav input[type=checkbox]:checked ~ ul, header .container nav input[type=checkbox]:checked ~ .login {
+    height: 0px;
     overflow: hidden;
-    margin: 0 10px 60px;
-    text-align: center;
-    width: 304px;
-    height: 240px;
-    border: 1px solid black;
-    box-shadow: 0px 0px 8px 0px black;
   }
-  .products .product-images .product-list li:nth-child(3) {
-    transform: scale(1.2);
-    transition: all .5s ease-in-out;
-    z-index: 99;
+  header .container nav label {
+    display: inline;
+    position: absolute;
+    transform: translate(474px, -60px);
   }
-  .products .product-images .product-list li img {
-    height: 100%;
-    width: 100%;
+  header .container nav .list {
+    z-index: 1;
+    margin-bottom: 60px;
+    display: block;
+  }
+  header .container nav .list li {
+    text-align: start;
+    padding: 10px;
+  }
+  header .container nav .list li:hover {
+    color: #49AEB4;
+    cursor: pointer;
+  }
+  header .container nav .list li:last-child {
+    padding-bottom: 50px;
+  }
+}
+@media (max-width: 600px) {
+  header .container {
+    margin-bottom: 40px;
+  }
+  header .container .logo {
+    font-weight: bold;
+    display: inline;
+    font-family: Cursive;
+  }
+  header .container .logo span {
+    margin-top: 0;
+    font-size: 25px;
+  }
+  header .container input {
+    height: 35px;
+    left: 65%;
+    margin-left: -120px;
+    margin-top: 0.5%;
+  }
+  header .container input:focus {
+    outline: black;
+  }
+  header .container nav .login {
+    transform: translate(10px, -100px);
+    z-index: 2;
+  }
+  header .container nav .login span:hover {
+    color: #49AEB4;
+    cursor: pointer;
+  }
+  header .container nav input[type=checkbox] {
+    position: absolute;
+    display: inline;
+    transform: translate(235px, -58px);
+    z-index: 2;
+    opacity: 0;
+    width: 40px;
+    height: 36px;
+  }
+  header .container nav input[type=checkbox]:checked {
+    transform: translate(235px, -58px);
+  }
+  header .container nav input[type=checkbox]:checked ~ label {
+    transform: translate(415px, -57px);
+  }
+  header .container nav input[type=checkbox]:checked ~ ul, header .container nav input[type=checkbox]:checked ~ .login {
+    height: 0px;
+    overflow: hidden;
+  }
+  header .container nav label {
+    display: inline;
+    position: absolute;
+    transform: translate(415px, -57px);
+  }
+  header .container nav .list {
+    z-index: 1;
+    margin-bottom: 60px;
+    display: block;
+  }
+  header .container nav .list li {
+    text-align: start;
+    padding: 10px;
+  }
+  header .container nav .list li:hover {
+    color: #49AEB4;
+    cursor: pointer;
+  }
+  header .container nav .list li:last-child {
+    padding-bottom: 50px;
   }
 }
 
