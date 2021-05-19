@@ -115,7 +115,7 @@ header{
                         width: 1076px;
                         display: flex;
                         .collection-intro{
-                            padding:150px 50px 50px 0;
+                            padding:150px 50px 50px 2px;
                             width: 419px;
                             float: left;
                             h2{
@@ -393,6 +393,7 @@ footer {
                         .collection-intro{
                             
                             width: 320px;
+                            padding-left: 1px;
                             h2{
                                 font-size: 40px;
                             }
@@ -569,19 +570,18 @@ footer {
         }
     } 
     .collections{
-        margin-bottom: 50px;
-        .container{
-            display: flex;
+        margin-bottom: 100px;
+        .container{     
             .collection-images{
-               // overflow: hidden;
-               
+                
+               overflow: hidden;
+               height: 493px;
+               width: 688px;
               .control{
-                position: absolute;
-                display: flex;
-                transform: translate(611px, 65px);
-                width: 70px;
-                height: 35px;
-                z-index: 9999;
+                transform: translate(647px, 65px);
+                width: 60px;
+                height: 30px;
+                
                   button{
                       background-color: $mainColor;
                       color: white;
@@ -598,38 +598,40 @@ footer {
                   }
                 }
                 .collections-list{
-                  position: relative;
-                    
-                    
+                    position: relative;
+                    margin: 0;
+                    display: flex;
+                    margin-left: -688px;
                      li{        
-                        position: relative;
-                       
+                        display: flex;
+                        width: 688px;
                         .collection-intro{
-                           
-                           
+                            position: absolute;
+                            background-color: rgba(0, 0, 0, 0.537);
+                            width: 688px;
+                            bottom: 43px;
+                            padding: 30px;
                             h2{
-                                font-size: 50px;
+                                font-size: 30px;
+                                color: white;
                             }
                             p{
-                                width: 370px;
+                            
+                                color: white;
                             }
                             span{
-                                font-size: 30px;
-                                font-weight: bold;
+                                color: white;
+                                
                             }
                             button{
-                                background-color: $mainColor;
-                                color: white;
-                                border: none;
-                                padding: 16px;
-                                width: 70%;
-                                display: block;
+                                width: 45%;
+                                float: right;
                             }
                         } 
-                    
+                        
                         img{
-                            height:100%;
-                            width: 100%;
+                            height: 536px;
+                            width: 688px;
                         }
                        }
                    }
@@ -721,6 +723,75 @@ footer {
            
         }
     } 
+    .collections{
+        margin-bottom: 100px;
+        .container{     
+            .collection-images{
+                
+               overflow: hidden;
+               height: 456px;
+               width: 510px;
+              .control{
+                transform: translate(480px, 65px);
+                width: 50px;
+                height: 30px;
+                  button{
+                      background-color: $mainColor;
+                      color: white;
+                      width: 50%;
+                      font-weight: bold;
+                      font-size: 19px;
+                      border: none;
+                      &:hover{
+                          opacity: 0.9;
+                      }
+                      &:focus{
+                          outline: none;
+                      }
+                  }
+                }
+                .collections-list{
+                    position: relative;
+                    margin: 0;
+                    display: flex;
+                    margin-left: -510px;
+                     li{        
+                        display: flex;
+                        width: 510px;
+                        .collection-intro{
+                            position: absolute;
+                            background-color: rgba(0, 0, 0, 0.537);
+                            width:510px;
+                            bottom: 0px;
+                            padding: 15px;
+                            h2{
+                                font-size: 28px;
+                                color: white;
+                            }
+                            p{
+                            
+                                color: white;
+                            }
+                            span{
+                                color: white;
+                                
+                            }
+                            button{
+                                width: 45%;
+                                float: right;
+                            }
+                        } 
+                        
+                        img{
+                            height: 456px;
+                            width: 510px;
+                        }
+                       }
+                   }
+               
+            }
+        }
+    }
 }
 @media (max-width:600px) {
     
@@ -772,7 +843,7 @@ footer {
 
                        }
                     &:checked~label{
-                        transform: translate(415px, -57px);                       
+                        transform: translate(477px, -57px);                       
                     }
                     &:checked~ul,&:checked~.login{
                         height: 0px;
@@ -782,7 +853,7 @@ footer {
                 label{
                     display: inline;
                     position: absolute;
-                    transform: translate(415px, -57px);
+                    transform: translate(477px, -57px);
                 }
                 .list{
                 z-index: 1;
@@ -805,4 +876,73 @@ footer {
            
         }
     } 
+    .collections{
+        margin-bottom: 100px;
+        .container{     
+            .collection-images{
+                
+               overflow: hidden;
+               height: 456px;
+               width: 510px;
+              .control{
+                transform: translate(480px, 65px);
+                width: 50px;
+                height: 30px;
+                  button{
+                      background-color: $mainColor;
+                      color: white;
+                      width: 50%;
+                      font-weight: bold;
+                      font-size: 19px;
+                      border: none;
+                      &:hover{
+                          opacity: 0.9;
+                      }
+                      &:focus{
+                          outline: none;
+                      }
+                  }
+                }
+                .collections-list{
+                    position: relative;
+                    margin: 0;
+                    display: flex;
+                    margin-left: -510px;
+                     li{        
+                        display: flex;
+                        width: 510px;
+                        .collection-intro{
+                            position: absolute;
+                            background-color: rgba(0, 0, 0, 0.537);
+                            width:510px;
+                            bottom: 0px;
+                            padding: 15px;
+                            h2{
+                                font-size: 28px;
+                                color: white;
+                            }
+                            p{
+                            
+                                color: white;
+                            }
+                            span{
+                                color: white;
+                                
+                            }
+                            button{
+                                width: 45%;
+                                float: right;
+                            }
+                        } 
+                        
+                        img{
+                            height: 456px;
+                            width: 510px;
+                        }
+                       }
+                   }
+               
+            }
+        }
+    }
 }

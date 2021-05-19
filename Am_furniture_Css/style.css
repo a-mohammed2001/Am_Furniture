@@ -110,7 +110,7 @@ header .container nav .list li:hover {
   display: flex;
 }
 .collections .container .collection-images .collections-list li .collection-intro {
-  padding: 150px 50px 50px 0;
+  padding: 150px 50px 50px 2px;
   width: 419px;
   float: left;
 }
@@ -375,6 +375,7 @@ footer {
   }
   .collections .container .collection-images .collections-list li .collection-intro {
     width: 320px;
+    padding-left: 1px;
   }
   .collections .container .collection-images .collections-list li .collection-intro h2 {
     font-size: 40px;
@@ -533,18 +534,17 @@ footer {
   }
 
   .collections {
-    margin-bottom: 50px;
+    margin-bottom: 100px;
   }
-  .collections .container {
-    display: flex;
+  .collections .container .collection-images {
+    overflow: hidden;
+    height: 493px;
+    width: 688px;
   }
   .collections .container .collection-images .control {
-    position: absolute;
-    display: flex;
-    transform: translate(611px, 65px);
-    width: 70px;
-    height: 35px;
-    z-index: 9999;
+    transform: translate(647px, 65px);
+    width: 60px;
+    height: 30px;
   }
   .collections .container .collection-images .control button {
     background-color: #49AEB4;
@@ -562,31 +562,38 @@ footer {
   }
   .collections .container .collection-images .collections-list {
     position: relative;
+    margin: 0;
+    display: flex;
+    margin-left: -688px;
   }
   .collections .container .collection-images .collections-list li {
-    position: relative;
+    display: flex;
+    width: 688px;
+  }
+  .collections .container .collection-images .collections-list li .collection-intro {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.537);
+    width: 688px;
+    bottom: 43px;
+    padding: 30px;
   }
   .collections .container .collection-images .collections-list li .collection-intro h2 {
-    font-size: 50px;
+    font-size: 30px;
+    color: white;
   }
   .collections .container .collection-images .collections-list li .collection-intro p {
-    width: 370px;
+    color: white;
   }
   .collections .container .collection-images .collections-list li .collection-intro span {
-    font-size: 30px;
-    font-weight: bold;
+    color: white;
   }
   .collections .container .collection-images .collections-list li .collection-intro button {
-    background-color: #49AEB4;
-    color: white;
-    border: none;
-    padding: 16px;
-    width: 70%;
-    display: block;
+    width: 45%;
+    float: right;
   }
   .collections .container .collection-images .collections-list li img {
-    height: 100%;
-    width: 100%;
+    height: 536px;
+    width: 688px;
   }
 }
 @media (max-width: 768px) and (min-width: 601px) {
@@ -659,6 +666,69 @@ footer {
   header .container nav .list li:last-child {
     padding-bottom: 50px;
   }
+
+  .collections {
+    margin-bottom: 100px;
+  }
+  .collections .container .collection-images {
+    overflow: hidden;
+    height: 456px;
+    width: 510px;
+  }
+  .collections .container .collection-images .control {
+    transform: translate(480px, 65px);
+    width: 50px;
+    height: 30px;
+  }
+  .collections .container .collection-images .control button {
+    background-color: #49AEB4;
+    color: white;
+    width: 50%;
+    font-weight: bold;
+    font-size: 19px;
+    border: none;
+  }
+  .collections .container .collection-images .control button:hover {
+    opacity: 0.9;
+  }
+  .collections .container .collection-images .control button:focus {
+    outline: none;
+  }
+  .collections .container .collection-images .collections-list {
+    position: relative;
+    margin: 0;
+    display: flex;
+    margin-left: -510px;
+  }
+  .collections .container .collection-images .collections-list li {
+    display: flex;
+    width: 510px;
+  }
+  .collections .container .collection-images .collections-list li .collection-intro {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.537);
+    width: 510px;
+    bottom: 0px;
+    padding: 15px;
+  }
+  .collections .container .collection-images .collections-list li .collection-intro h2 {
+    font-size: 28px;
+    color: white;
+  }
+  .collections .container .collection-images .collections-list li .collection-intro p {
+    color: white;
+  }
+  .collections .container .collection-images .collections-list li .collection-intro span {
+    color: white;
+  }
+  .collections .container .collection-images .collections-list li .collection-intro button {
+    width: 45%;
+    float: right;
+  }
+  .collections .container .collection-images .collections-list li img {
+    height: 456px;
+    width: 510px;
+  }
 }
 @media (max-width: 600px) {
   header .container {
@@ -703,7 +773,7 @@ footer {
     transform: translate(235px, -58px);
   }
   header .container nav input[type=checkbox]:checked ~ label {
-    transform: translate(415px, -57px);
+    transform: translate(477px, -57px);
   }
   header .container nav input[type=checkbox]:checked ~ ul, header .container nav input[type=checkbox]:checked ~ .login {
     height: 0px;
@@ -712,7 +782,7 @@ footer {
   header .container nav label {
     display: inline;
     position: absolute;
-    transform: translate(415px, -57px);
+    transform: translate(477px, -57px);
   }
   header .container nav .list {
     z-index: 1;
@@ -729,6 +799,69 @@ footer {
   }
   header .container nav .list li:last-child {
     padding-bottom: 50px;
+  }
+
+  .collections {
+    margin-bottom: 100px;
+  }
+  .collections .container .collection-images {
+    overflow: hidden;
+    height: 456px;
+    width: 510px;
+  }
+  .collections .container .collection-images .control {
+    transform: translate(480px, 65px);
+    width: 50px;
+    height: 30px;
+  }
+  .collections .container .collection-images .control button {
+    background-color: #49AEB4;
+    color: white;
+    width: 50%;
+    font-weight: bold;
+    font-size: 19px;
+    border: none;
+  }
+  .collections .container .collection-images .control button:hover {
+    opacity: 0.9;
+  }
+  .collections .container .collection-images .control button:focus {
+    outline: none;
+  }
+  .collections .container .collection-images .collections-list {
+    position: relative;
+    margin: 0;
+    display: flex;
+    margin-left: -510px;
+  }
+  .collections .container .collection-images .collections-list li {
+    display: flex;
+    width: 510px;
+  }
+  .collections .container .collection-images .collections-list li .collection-intro {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.537);
+    width: 510px;
+    bottom: 0px;
+    padding: 15px;
+  }
+  .collections .container .collection-images .collections-list li .collection-intro h2 {
+    font-size: 28px;
+    color: white;
+  }
+  .collections .container .collection-images .collections-list li .collection-intro p {
+    color: white;
+  }
+  .collections .container .collection-images .collections-list li .collection-intro span {
+    color: white;
+  }
+  .collections .container .collection-images .collections-list li .collection-intro button {
+    width: 45%;
+    float: right;
+  }
+  .collections .container .collection-images .collections-list li img {
+    height: 456px;
+    width: 510px;
   }
 }
 
