@@ -1,5 +1,8 @@
      jQuery(document).ready(function () {
-           var slideWidth = $('.collection-images ul li').width();
+           var slideWidth = $('.collection-images ul li').width(),
+           productsWidth = $('.product-images ul li').width();
+
+           
            $('.collection-images ul li:last-child').prependTo('.collection-images ul');
       
            function moveLeft() {
@@ -25,14 +28,16 @@
            });
 
            $(".product-images ul").css("margin-left","-362px");
+           $('.product-images ul li:last-child').prependTo('.product-images ul');
+
            function movePRight() {
-             $('.product-images ul').animate({left:"-343px"}, 400, function () {
+             $('.product-images ul').animate({left:-productsWidth}, 400, function () {
                  $('.product-images ul li:first-child').appendTo('.product-images ul');
                  $('.product-images ul').css('left', '');
              });
          };
            function movePLeft(){
-               $(".product-images ul").animate({left:"343px"},400,function(){
+               $(".product-images ul").animate({left:productsWidth},400,function(){
                    $(".product-images ul li:last-child").prependTo(".product-images ul");
                    $(".product-images ul").css("left","");
                })
