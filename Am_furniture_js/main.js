@@ -1,4 +1,13 @@
-     jQuery(document).ready(function () {
+new Vue({
+    el:"#board",
+    data:{
+        activetab:1,
+    },
+    methods:{
+       
+    }
+})
+jQuery(document).ready(function () {
            var slideWidth = $('.collection-images ul li').width(),
            productsWidth = $('.product-images ul li').width();
 

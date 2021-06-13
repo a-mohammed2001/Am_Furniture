@@ -142,6 +142,7 @@ header{
                             float: right;
                             height: 565px;
                             width: 656px;
+                            border: solid 1px black;
                         }
                     }
                 }
@@ -151,7 +152,7 @@ header{
 
 .products{
     display: flex;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     h2{
         font-size: 50px;
         margin-bottom: 20px;
@@ -210,7 +211,7 @@ header{
        
     }
 }
-/*
+
 .board{
     display: flex;
     padding: 0;
@@ -221,17 +222,25 @@ header{
         background-color: $mainColor;
         padding: 30px;
         position: relative;
-        
-       
         border-top-right-radius: 16% 70%;
         border-bottom-right-radius: 16% 70%;
-       
-
         .active-img{
-         margin-right: 20px;
+            margin: 0 20px;
+            width: 450px;
+            height: 450px;
+            border: solid 1px black;
+         img{
+             width: 100%;
+             height: 100%;
+         }
         }
         ul{
             padding-top:20px ;
+            .active{
+                border: solid 1.5px black;
+                transform: scale(1.13);
+                
+            }
             li{
                 height:90px;
                 width: 90px;
@@ -241,6 +250,39 @@ header{
                     width: 100%;
                 }
             }
+        }
+    }
+    .board-intro{
+        padding: 50px;
+        h4{
+            margin: 25px 0;
+        }
+        h5{
+            border-bottom: dotted 2px black;
+            display: inline-block;
+            margin: 0 0 25px 0;
+
+        }
+        p{
+            width: 362px;
+            height: 140px;
+        }
+        h3{ 
+            display: inline;
+            margin-right: 35px;
+        }
+        button{
+            background-color: $mainColor;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 15px 80px;
+
+        }
+        span{
+            color: $mainColor;
+            display: block;
+            padding-top: 30px;
         }
     }
 }
@@ -471,6 +513,80 @@ footer {
            
         }
     }
+    .board{
+        display: flex;
+        padding: 0;
+        box-shadow: 0px 0px 25px 0px lightslategrey;
+        margin-bottom: 100px;
+        .board-img{
+            display: flex;
+            background-color: $mainColor;
+            padding: 30px;
+            position: relative;
+            border-top-right-radius: 16% 70%;
+            border-bottom-right-radius: 16% 70%;
+            .active-img{
+                margin:10px;
+                width: 450px;
+                height: 427px;
+                border: solid 1px black;
+             img{
+                 width: 100%;
+                 height: 100%;
+             }
+            }
+            ul{
+                padding-top:20px ;
+                .active{
+                    border: solid 1.5px black;
+                    transform: scale(1.13);
+                    
+                }
+                li{
+                    height:85px;
+                    width: 85px;
+                    margin: 10px;
+                    img{
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        .board-intro{
+            padding: 50px;
+            h4{
+                margin: 25px 0;
+            }
+            h5{
+                border-bottom: dotted 2px black;
+                display: inline-block;
+                margin: 0 0 25px 0;
+    
+            }
+            p{
+                width: 327px;
+                height: 140px;
+            }
+            h3{ 
+                display: inline;
+                margin-right: 35px;
+            }
+            button{
+                background-color: $mainColor;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                padding: 15px 80px;
+    
+            }
+            span{
+                color: $mainColor;
+                display: block;
+                padding-top: 30px;
+            }
+        }
+    }
 }
 @media (max-width:992px) and (min-width:769px){
     header{
@@ -668,6 +784,63 @@ footer {
                   
                }
            
+        }
+    }
+    .board{
+        display: flex;
+        padding: 0;
+        box-shadow: 0px 0px 25px 0px lightslategrey;
+        margin-bottom: 100px;
+        .board-img{
+            display: inline-block;
+            padding: 10px;
+            border-radius: 0;
+            .active-img{
+                margin: 10px;
+                width: 320px;
+                height: 295px;
+             img{
+                 width: 100%;
+                 height: 100%;
+             }
+            }
+            ul{
+                display: flex;
+                padding:0 ;
+                .active{
+                    border: solid 1.5px black;
+                    transform: scale(1.13);
+                    
+                }
+                li{
+                    height:70px;
+                    margin: 5px;
+                    img{
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        .board-intro{
+            padding: 23px;
+            p{
+                width: 327px;
+            }
+            h3{ 
+                display: inline;
+                margin-right: 35px;
+            }
+            button{
+                
+                padding: 10px 35px;
+    
+            }
+            span{
+                color: $mainColor;
+                display: block;
+                padding-top: 30px;
+            }
         }
     }
 }
@@ -870,6 +1043,64 @@ footer {
            
         }
     }
+    .board{
+        display: block;
+        padding: 0;
+        box-shadow: 0px 0px 25px 0px lightslategrey;
+        margin-bottom: 100px;
+        .board-img{
+            display: flex;
+            padding: 10px;
+            border-radius: 0;
+            .active-img{
+                margin: 10px;
+                width: 400px;
+                height: 390px;
+             img{
+                 width: 100%;
+                 height: 100%;
+                }
+            }
+            ul{
+                padding:26px 0 ;
+                .active{
+                    border: solid 1.5px black;
+                    transform: scale(1.13);
+                    
+                }
+                li{
+                    height: 85px;
+                    width: 75px;
+                    margin: 5px;
+                    img{
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        .board-intro{
+            padding: 0px 0px 15px 55px;
+            p{
+                width: 458px;
+                height: 100px;
+            }
+            h3{ 
+                display: inline;
+                margin-right: 35px;
+            }
+            button{
+                
+                padding: 10px 35px;
+    
+            }
+            span{
+                color: $mainColor;
+                display: block;
+                padding-top: 10px;
+            }
+        }
+    }
 }
 @media (max-width:600px) {
     
@@ -908,19 +1139,20 @@ footer {
                         }
                     }
                 }
+                
                 input[type=checkbox]{
                     position: absolute;
                     display: inline;
-                    transform: translate(235px, -58px);   
+                    transform: translate(240px, -57px); 
                     z-index: 2;
                     opacity: 0;
                     width: 40px;
                     height: 36px;
                        &:checked{
-                        transform: translate(235px, -58px);
+                        transform: translate(240px, -57px); 
                        }
                     &:checked~label{
-                        transform: translate(477px, -57px);                       
+                        transform: translate(419px, -57px);                      
                     }
                     &:checked~ul,&:checked~.login{
                         height: 0px;
@@ -930,7 +1162,7 @@ footer {
                 label{
                     display: inline;
                     position: absolute;
-                    transform: translate(477px, -57px);
+                    transform: translate(419px, -57px); 
                 }
                 .list{
                 z-index: 1;
@@ -959,10 +1191,10 @@ footer {
             .collection-images{
                 
                overflow: hidden;
-               height: 456px;
-               width: 510px;
+               height: 390px;
+               width: 451px;
               .control{
-                transform: translate(480px, 65px);
+                transform: translate(415px, 65px);
                 width: 50px;
                 height: 30px;
                   button{
@@ -991,23 +1223,24 @@ footer {
                         .collection-intro{
                             position: absolute;
                             background-color: rgba(0, 0, 0, 0.537);
-                            width:510px;
-                            bottom: 0px;
+                            width:451px;
+                            bottom: 67px;
                             padding: 15px;
                             h2{
-                                font-size: 28px;
+                                font-size: 22px;
                                 color: white;
                             }
                             p{
-                            
+                                font-size: 15px;
                                 color: white;
                             }
                             span{
+                                font-size: 25px;
                                 color: white;
                                 
                             }
                             button{
-                                width: 45%;
+                                width: 60%;
                                 float: right;
                             }
                         } 
@@ -1019,6 +1252,110 @@ footer {
                        }
                    }
                
+            }
+        }
+    }
+    .products{
+        display: flex;
+        margin-bottom: 100px;
+        h2{
+            font-size: 30px;
+            margin-left: 10px;
+        }
+        .product-images{
+            width: 465px;
+            height: 295px;
+            margin: auto;
+            .product-control{
+                display: contents;
+                  span{
+                    height: 219px;
+                    width: 23px;
+                  } 
+                  .product-next{
+                    transform: translateX(440px);
+                }
+               }
+            .product-list{
+             
+                padding-left: 60px;             
+                 li{            
+                    width: 335px;
+                    height: 220px;
+                    &:nth-child(2){
+                        transform: scale(1.23,1.2);
+                        transition: all .5s ease-in-out;
+                        z-index: 998;
+                    }
+                    &:nth-child(3){
+                        transform: scale(1);
+                    }
+                   
+                    img{
+                       height: 100%;
+                       width: 100%;
+                    }
+                   }
+                  
+               }
+           
+        }
+    }
+    .board{
+        display: block;
+        padding: 0;
+        box-shadow: 0px 0px 25px 0px lightslategrey;
+        margin-bottom: 100px;
+        .board-img{
+            display: flex;
+            padding: 10px;
+            border-radius: 0;
+            .active-img{
+                margin: 10px;
+                width: 400px;
+                height: 390px;
+             img{
+                 width: 100%;
+                 height: 100%;
+                }
+            }
+            ul{
+                padding:26px 0 ;
+                .active{
+                    border: solid 1.5px black;
+                    transform: scale(1.13);
+                    
+                }
+                li{
+                    height: 85px;
+                    width: 75px;
+                    margin: 5px;
+                    img{
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        .board-intro{
+            padding: 0px 0px 15px 15px;
+            p{
+                width: 458px;
+                height: 100px;
+            }
+            h3{ 
+                display: inline;
+                margin-right: 35px;
+            }
+            button{
+                
+                padding: 10px 35px;
+    
+            }
+            span{
+                color: $mainColor;
+                display: block;
+                padding-top: 10px;
             }
         }
     }

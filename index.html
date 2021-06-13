@@ -10,12 +10,14 @@
    
     <header>
       <div class="container">
+       
             <article class="logo">
                   <img src="Am_furniture_images/logo.jpg" alt="">
                   <span>furniture</span>
             </article>
                   <input type="search" placeholder="search">
                <nav>
+                 
                  <input type="checkbox" id="check">
                  <label for="chek">
                   <svg width="2.5em" height="2.5em" viewBox="0 0 16 16" class="bi bi-list" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -106,32 +108,38 @@
             </div>
       </div>
     </div>
-    <!--
-    <div class="board container">
-        <div class="col-7 board-img curved">
+   
+ 
+    <div id="board" class="board container">
+        <div class="col-lg-7 col-md-6 col-sm-12 curved board-img ">
           <div class="active-img">
-            <img src="Am_furniture_images/board1.png" alt="">
+            <img v-if="activetab == 1" src="Am_furniture_images/board1.webp" alt="">
+            <img v-if="activetab == 2" src="Am_furniture_images/board2.webp" alt="">
+            <img v-if="activetab == 3" src="Am_furniture_images/board3.webp" alt="">
+            <img v-if="activetab == 4" src="Am_furniture_images/board4.webp" alt="">
+          
           </div>
                 <ul class="list-unstyled">
-                  <li><img src="Am_furniture_images/board1.png" alt=""></li>
-                  <li><img src="Am_furniture_images/board2.png" alt=""></li>
-                  <li><img src="Am_furniture_images/board3.png" alt=""></li>
-                  <li><img src="Am_furniture_images/board4.png" alt=""></li>
+                  <li @click="activetab = 1" :class="activetab === 1? 'active' : ''"><img src="Am_furniture_images/board1.webp" alt=""></li>
+                  <li @click="activetab = 2" :class="activetab === 2? 'active' : ''"><img src="Am_furniture_images/board2.webp" alt=""></li>
+                  <li @click="activetab = 3" :class="activetab === 3? 'active' : ''"><img src="Am_furniture_images/board3.webp" alt=""></li>
+                  <li @click="activetab = 4" :class="activetab === 4? 'active' : ''"><img src="Am_furniture_images/board4.webp" alt=""></li>
                 </ul>
         </div>
-        <div class="col-5 board-intro">
-          <h2>Lorem Ipsum</h2>
+        <div class="col-lg-5 col-md-6 col-sm-12 board-intro">
+          <h4>Lorem Ipsum</h4>
           <h5>DESCRIPTION</h5>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
             Magnam dolore nulla vel animi iusto optio repudiandae, 
             placeat maxime, asperiores quia eveniet exercitationem ducimus?
             Necessitatibus nihil rem laborum, 
             quidem nesciunt illum?</p>
-            <span>499.99</span>
+            <h3>499.99</h3>
             <button>BUY NOW</button>
             <span>View all boards</span>
         </div>
-    </div>
+    </div> 
+      <!--
     <footer >
       <div class="container">
           <div class="landing-end ">
