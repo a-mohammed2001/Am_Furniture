@@ -267,45 +267,41 @@ header .container nav .list li:hover {
   padding-top: 30px;
 }
 
-/*
-footer {
-    .container{
-        border-top: 1px solid black;
-        padding:30px;
-        font-family:  Cursive;
-        display: flex;
-    .landing-end{
-        margin-top: 30px;
-        display: flex;
-        .footer-logo{
-            
-            font-weight: bold;           
-            img{
-                height:50px;
-                width: 50px;
-            }
-            span{
-                font-size: 30px;
-                position: absolute;
-            }
-            p{
-                margin-top: 20px;
-                width: 433px;
-            }
-        }
-        ul{
-            margin-left: 35px;
-        }
-    }
-    .map{
-        background-color: lightgrey;
-        height: 300px;
-        width: 591px;
-        margin-left: 35px;
-        text-align: center;
-    }
+footer .container {
+  border-top: 1px solid black;
+  padding: 35px 1px;
+  font-family: Cursive;
+  display: flex;
 }
-}*/
+footer .container .landing-end {
+  margin-top: 30px;
+  display: flex;
+}
+footer .container .landing-end .footer-logo {
+  font-weight: bold;
+}
+footer .container .landing-end .footer-logo img {
+  height: 50px;
+  width: 50px;
+}
+footer .container .landing-end .footer-logo span {
+  font-size: 30px;
+  position: absolute;
+}
+footer .container .landing-end .footer-logo p {
+  margin-top: 20px;
+  width: 433px;
+}
+footer .container .landing-end ul {
+  margin-left: 35px;
+}
+footer .container .map {
+  height: 300px;
+  width: 591px;
+  margin-left: 35px;
+  text-align: center;
+}
+
 @media (max-width: 1200px) and (min-width: 993px) {
   header .container {
     padding-top: 20px;
@@ -546,6 +542,42 @@ footer {
     display: block;
     padding-top: 30px;
   }
+
+  footer .container {
+    border-top: 1px solid black;
+    padding: 35px 1px;
+    font-family: Cursive;
+    display: flex;
+  }
+  footer .container .landing-end {
+    margin-top: 30px;
+    display: flex;
+  }
+  footer .container .landing-end .footer-logo {
+    font-weight: bold;
+  }
+  footer .container .landing-end .footer-logo img {
+    height: 50px;
+    width: 50px;
+  }
+  footer .container .landing-end .footer-logo span {
+    font-size: 30px;
+    position: absolute;
+  }
+  footer .container .landing-end .footer-logo p {
+    margin-top: 20px;
+    width: 391px;
+  }
+  footer .container .landing-end ul {
+    margin-left: 25px;
+  }
+  footer .container .map {
+    background-color: lightgrey;
+    height: 300px;
+    width: 591px;
+    margin-left: 35px;
+    text-align: center;
+  }
 }
 @media (max-width: 992px) and (min-width: 769px) {
   header .container {
@@ -774,6 +806,39 @@ footer {
     color: #49AEB4;
     display: block;
     padding-top: 30px;
+  }
+
+  footer .container {
+    border-top: 1px solid black;
+    padding: 35px 1px;
+    font-family: Cursive;
+    display: block;
+  }
+  footer .container .landing-end {
+    margin-top: 0;
+    display: flex;
+  }
+  footer .container .landing-end .footer-logo {
+    font-weight: bold;
+  }
+  footer .container .landing-end .footer-logo img {
+    height: 50px;
+    width: 50px;
+  }
+  footer .container .landing-end .footer-logo span {
+    font-size: 30px;
+    position: absolute;
+  }
+  footer .container .landing-end .footer-logo p {
+    margin-top: 10px;
+    width: 575px;
+  }
+  footer .container .landing-end ul {
+    margin-left: 25px;
+  }
+  footer .container .map {
+    width: 100%;
+    margin-left: 0px;
   }
 }
 @media (max-width: 768px) and (min-width: 601px) {
@@ -1010,6 +1075,38 @@ footer {
     display: block;
     padding-top: 10px;
   }
+
+  footer .container {
+    border-top: 1px solid black;
+    padding: 35px 1px;
+    font-family: Cursive;
+    display: block;
+  }
+  footer .container .landing-end {
+    margin-top: 0;
+    display: flex;
+  }
+  footer .container .landing-end .footer-logo {
+    font-weight: bold;
+  }
+  footer .container .landing-end .footer-logo img {
+    height: 50px;
+    width: 50px;
+  }
+  footer .container .landing-end .footer-logo span {
+    font-size: 30px;
+    position: absolute;
+  }
+  footer .container .landing-end .footer-logo p {
+    width: 425px;
+  }
+  footer .container .landing-end ul {
+    margin-left: 25px;
+  }
+  footer .container .map {
+    width: 100%;
+    margin-left: 0px;
+  }
 }
 @media (max-width: 600px) {
   header .container {
@@ -1244,6 +1341,38 @@ footer {
     color: #49AEB4;
     display: block;
     padding-top: 10px;
+  }
+
+  footer .container {
+    border-top: 1px solid black;
+    padding: 35px 1px 0;
+    font-family: Cursive;
+    display: block;
+  }
+  footer .container .landing-end {
+    margin-top: 0;
+    display: flex;
+  }
+  footer .container .landing-end .footer-logo {
+    font-weight: bold;
+  }
+  footer .container .landing-end .footer-logo img {
+    height: 50px;
+    width: 50px;
+  }
+  footer .container .landing-end .footer-logo span {
+    font-size: 30px;
+    position: absolute;
+  }
+  footer .container .landing-end .footer-logo p {
+    width: 371px;
+  }
+  footer .container .landing-end ul {
+    margin-left: 25px;
+  }
+  footer .container .map {
+    width: 100%;
+    margin-left: 0px;
   }
 }
 
